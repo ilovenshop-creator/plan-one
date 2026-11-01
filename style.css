@@ -155,3 +155,32 @@ img{display:block;width:100%;height:auto}
   .mobile-actions .fixed-icon{font-size:18px;margin-right:7px}
   .visitor-count{right:12px;bottom:190px}
 }
+
+
+/* Mobile-only: Richensia-style stacked square floating actions. Desktop styles remain unchanged. */
+@media(max-width:640px){
+  .mobile-actions{
+    position:fixed;left:auto;right:14px;bottom:18px;transform:none;
+    width:auto;display:flex;flex-direction:column;gap:10px;
+    padding:0;background:transparent;border:0;box-shadow:none;z-index:1100;
+  }
+  .mobile-actions a{
+    flex:none;width:76px;height:76px;min-height:76px;padding:8px 4px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:0;border-radius:18px;font-size:16px;line-height:1.35;font-weight:900;
+    letter-spacing:0;box-shadow:0 5px 16px rgba(0,0,0,.22);
+  }
+  .mobile-actions a span{display:block}
+  .mobile-actions .fixed-icon{display:none}
+  .visitor-count{left:14px;right:auto;bottom:22px;z-index:1090;
+    padding:8px 11px;font-size:10px}
+  .visitor-count strong{font-size:12px}
+}
+
+/* 2026-11-01: final requested emphasis for mobile actions, visitor count and header phone */
+.header-call{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 22px;font-size:18px;font-weight:900;letter-spacing:.2px}
+.header-call-icon{display:inline-block;font-size:25px;line-height:1}
+@media(max-width:900px){.header-call{padding:10px 16px;font-size:16px;gap:8px}.header-call-icon{font-size:23px}}
+@media(max-width:640px){.header-call{padding:9px 13px;font-size:15px;gap:6px}.header-call-icon{font-size:21px}.mobile-actions a{width:76px;height:76px;min-height:76px;padding:4px 2px;font-size:23px;line-height:1.18;letter-spacing:-.8px;font-weight:900}.mobile-actions a span{white-space:nowrap}.visitor-count{left:14px;right:auto;bottom:22px;animation:visitorSoftBlink 3.6s ease-in-out infinite;transform-origin:left center}}
+@keyframes visitorSoftBlink{0%,100%{opacity:1}50%{opacity:.58}}
+@media(prefers-reduced-motion:reduce){.visitor-count{animation:none}}
