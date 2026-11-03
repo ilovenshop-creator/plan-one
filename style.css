@@ -10,7 +10,7 @@ img{display:block;width:100%;height:auto}
 .desktop-nav{display:flex;align-items:center;gap:clamp(14px,2.1vw,34px);font-size:14px;font-weight:600;color:#47565b}
 .desktop-nav a:hover{color:#c18d45}
 .header-call{background:#183e49;color:white;padding:11px 20px;border-radius:30px;font-size:14px;font-weight:800;white-space:nowrap}
-.hero{min-height:min(760px,calc(100vh - 76px));position:relative;display:flex;align-items:center;background:#d9e3e3 url("hero_aerial.jpg") center 48%/cover no-repeat;color:white}
+.hero{min-height:min(760px,calc(100vh - 76px));position:relative;display:flex;align-items:center;background:#d9e3e3 url("hero_aerial.webp") center 48%/cover no-repeat;color:white}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,28,35,.72),rgba(8,28,35,.25) 60%,rgba(8,28,35,.06))}
 .hero-content{position:relative;width:min(1180px,90%);margin:0 auto;padding:100px 0 120px}
 .eyebrow{font-size:13px;letter-spacing:3px;font-weight:800;color:#e7c48a}
